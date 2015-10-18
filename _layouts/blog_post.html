@@ -1,0 +1,22 @@
+---
+layout: blog_default
+---
+
+  <div class="row row-offcanvas row-offcanvas-left">
+
+    <div class="post main-content col-xs-12 col-md-9">
+
+    <button class="btn btn-primary visible-sm-inline-block visible-xs-inline-block" data-toggle="off-canvas">toggle sidebar</button>
+
+      <header class="post-header">
+      {%unless page.no-header %} <h3 class="post-title">{{ page.title }}</h3>{% endunless %}
+      </header>
+
+      <article class="post-content">
+        {{ content }}
+      </article>
+
+    </div>
+
+</div>
+

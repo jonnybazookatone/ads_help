@@ -1,0 +1,187 @@
+
+
+.smart-container {
+@include container-fixed;
+ @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+p, ul, table {
+  font-weight: 300;
+}
+
+pre code {
+    font-size:14px;
+}
+
+.main-content table {
+    @extend .table;
+    @extend .table-striped;
+}
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 56px;
+
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    border-bottom: 1px solid $brand-color-muted;
+    margin-bottom: 50px;
+}
+
+.site-title {
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    line-height: 56px;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+
+
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    // padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 34px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin: $spacing-unit 0;
+}
+
+
+//for subheadings within posts
+h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+
+.search-bar-container *,
+.search-bar-container *:before,
+.search-bar-container *:after
+ {
+    -webkit-box-sizing: content-box !important;
+     -moz-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+nav.top-nav {
+  border-bottom: 1px solid rgb(211, 211, 211);
+  box-shadow: 0px 2px 3px rgb(241, 241, 241);
+  padding: 2% 2% 1% 2%;
+
+
+  .logo-container img {
+    width: 200px;
+    margin-top: -4px;;
+  }
+
+
+}
