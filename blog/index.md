@@ -3,12 +3,11 @@ layout: blog_page
 ---
 
 <div class="container">
+    <div class="row">
 
-{% for post in site.posts %}
+      {% for post in site.posts %}
 
     {% if post.category contains 'blog' %}
-
-    <div class="row">
 
       <div class="panel panel-default">
 
@@ -51,10 +50,9 @@ layout: blog_page
 
 
       </div>
-    </div>
 
     {% endif %}
 
 {% endfor %}
-
+</div>
 </div>
