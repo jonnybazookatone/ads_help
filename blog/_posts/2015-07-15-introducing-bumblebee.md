@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog_post
 title: "Updates on ADS Interfaces and the Announcement of Bumblebee"
 author: "Alberto Accomazzi"
 category: blog
