@@ -2,6 +2,7 @@
 layout: blog_post
 title: "Updates on ADS Interfaces and the Announcement of Bumblebee"
 author: "Alberto Accomazzi"
+position: "ADS PI/Project Manager"
 category: blog
 label: general
 thumbnail: img/ads_logo.png
